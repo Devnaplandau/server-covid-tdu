@@ -7,4 +7,5 @@ module.exports = {
   UserVaccine: require("./userVaccine"),
   VaccineLot: require("./vaccineLot"),
   Partner: require("./partner"),
+  Feedback: require("./feedBack"),
 };

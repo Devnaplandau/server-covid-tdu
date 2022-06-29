@@ -5,4 +5,5 @@ module.exports = {
   vaccineController: require("./vaccineController"),
   vaccineLotController: require("./vaccineLotController"),
   partnerController: require("./partnerController"),
+  feedbackController: require("./feedBackController"),
 };
