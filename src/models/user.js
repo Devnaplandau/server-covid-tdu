@@ -24,6 +24,9 @@ const userSchema = new mongoose.Schema(
     dateCheck: {
       type: String,
     },
+    tokenUser: {
+      type: String,
+    },
   },
   schemaOptions
 );
