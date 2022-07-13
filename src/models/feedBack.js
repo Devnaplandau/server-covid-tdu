@@ -17,6 +17,9 @@ const feedBackSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    statusComment: {
+      type: Boolean,
+    },
   },
   schemaOptions
 );

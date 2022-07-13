@@ -35,3 +35,15 @@ exports.delete = async (req, res) => {
     res.status(500).json(error);
   }
 };
+exports.update = async (req, res) => {
+  try {
+    const updateComment = await Feedback.findByIdAndUpdate(req.params.id, {
+      // giá trị đc nhập vào sẽ dùng lại update vào id đc set
+      $set: req.body,
+    });
+    res.status(200).json(updateComment);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json(error);
+  }
+};
