@@ -17,7 +17,7 @@ router.get("/:id", userController.getOne);
 router.put("/:id", userController.update);
 router.delete("/:id", userController.delete);
 router.get("/phone/:phone", userController.getOnePhone);
-
+router.delete("/:id", userController.delPlaceUser);
 // add vaccinated to user
 router.post(
   "/vaccinated",

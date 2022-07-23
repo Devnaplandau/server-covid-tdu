@@ -74,6 +74,17 @@ exports.getAllPlaceUser = async (req, res) => {
     res.status(500).json(error);
   }
 };
+exports.delPlaceUser = async (req, res) => {
+  try {
+    await UserPlace.findOneAndDelete({
+      _id: req.id,
+    });
+    res.status(200).json("Deleted");
+  } catch (error) {
+    console.log(error);
+    res.status(500).json(error);
+  }
+};
 // get a user
 exports.getOne = async (req, res) => {
   try {
